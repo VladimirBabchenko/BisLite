@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato/lato-black-webfont.woff2") format("woff2"), url("../fonts/lato/lato-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato/lato-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  margin: 0; }
+
+.main-header {
+  background-color: #e8ebf1; }
+
+.navbar-toggle .icon-bar {
+  background-color: #888; }
+
+.navbar-toggle {
+  border-color: #ddd; }
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent; }
+
+.navbar-collapse {
+  border-color: #e7e7e7; }
+
+.navbar {
+  margin-bottom: 0;
+  margin: 15px 0; }
+
+.navbar-brand.logo span:first-child {
+  font: 50px/1 "latobold";
+  color: #000; }
+
+.navbar-brand.logo span:last-child {
+  font: 50px/1 "latoregular";
+  color: #2aacc8; }
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+  font: 13px/1.2 "arial";
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  left: 0; }
+
+.navbar-collapse {
+  padding-right: 0; }
+
+.navbar-header {
+  margin-bottom: 20px; }
+
+.nav.navbar-nav.navbar-right {
+  margin-top: 12px; }
+
+.navbar-brand {
+  padding: 7px 0; }
+
+.navbar-toggle {
+  margin-top: 21px; }
+
+/*# sourceMappingURL=styles.css.map */
