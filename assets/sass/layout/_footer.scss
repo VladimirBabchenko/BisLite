@@ -1,0 +1,252 @@
+footer {
+    padding: 30px 0 40px 0;
+    background-color: #e8ebf1;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__about {
+    flex-basis: 235px;
+}
+
+.footer__explore {
+    flex-basis: 80px;
+}
+
+.footer__browse {
+    flex-basis: 120px;
+}
+
+.footer__contacts {
+    flex-basis: 145px;
+
+    span:first-of-type {
+        font-weight: bold;
+    }
+
+    span:nth-of-type(3) {
+        margin-bottom: 15px;
+    }
+}
+
+.footer__connect {
+    flex-basis: 195px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    text-align: right;
+
+    a {
+        width: 52px;
+        height: 58px;
+        background: url("../img/sprite.png") -4px -624px no-repeat;
+
+        &:nth-child(3) {
+            background: url("../img/sprite.png") -4px -746px no-repeat;
+        }
+        &:nth-child(4) {
+            background: url("../img/sprite.png") -4px -864px no-repeat;
+        }
+        &:nth-child(5) {
+            background: url("../img/sprite.png") -4px -684px no-repeat;
+        }
+        &:nth-child(6) {
+            background: url("../img/sprite.png") -4px -805px no-repeat;
+        }
+        &:nth-child(7) {
+            background: url("../img/sprite.png") -4px -924px no-repeat;
+        }
+
+        &:nth-of-type(3n) {
+            padding-bottom: 15px;
+        }
+    }
+
+    p {
+        flex-basis: 100%;
+    }
+}
+
+.footer__item {
+
+    &:not(.footer__connect) {
+    display: flex;
+    flex-direction: column;
+    }
+
+    p {
+        font: 14px/1.2 "Arial";
+        font-weight: normal;
+        color: #363636;
+
+        &:first-child {
+            margin-bottom: 20px;
+            font: 15px/20px "Arial";
+            font-weight: bold;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+    }
+
+    a {
+        font: 14px/26px "arial";
+        font-weight: normal;
+    }
+
+    &:last-child a {
+        font-size: 0;
+    }
+}
+
+.copyright {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 35px;
+
+    p {
+        flex-basis: 70%;
+        font: 13px/18px "Arial";
+
+        span {
+            display: block;
+            white-space: nowrap;
+        }
+    }
+
+    a {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer__container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer__connect {
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__item p:first-child {
+        margin-top: 29px;
+        margin-bottom: 10px;
+    }
+
+    .copyright {
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 840px) {
+    .footer__list {
+        justify-content: space-around;
+    }
+
+    .footer__connect {
+        order: 5;
+    }
+
+    .footer__about {
+        order: 4;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+
+        p:first-child {
+            text-align: center;
+        }
+    }
+
+    .footer {
+        padding-bottom: 10px;
+    }
+
+    .footer__item p:first-child {
+        margin-top: 30px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        margin-top: 0;
+
+        .logo {
+            margin-bottom: 25px;
+        }
+
+        p {
+            flex-basis: 100%;
+            text-align: center;
+            order: 1;
+
+            span {
+                white-space: normal;
+            }
+        }
+
+        a {
+            margin-right: auto;
+        }
+    }
+
+    footer {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer__item.footer__contacts {
+        flex-basis: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px 0;
+
+        p, span, a {
+            white-space: nowrap;
+        }
+
+        a {
+            font-size: 14px;
+            line-height: 1.43;
+        }
+
+        p {
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        span {
+            flex-basis: 25%;
+            
+            &:first-of-type {}
+            text-align: center;
+        }
+
+        a, span:last-of-type {
+            flex-basis: 27%;
+        }
+    }
+
+    .footer__item p:first-child {
+        margin-top: 0;
+    }
+
+    .footer__contacts span:nth-of-type(3) {
+        margin-bottom: 10px;
+    }
+
+    .footer__about {
+        margin-bottom: 30px;
+    }
+}
